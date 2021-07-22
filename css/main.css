@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafa;
+  padding-top: 1rem;
+}
+
+main .heading {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto 2rem auto;
+}
+
+main .heading h1 {
+  color: #4c4e61;
+  margin: 0;
+}
+
+main .heading span {
+  font-weight: 200;
+  color: #a3a5ae;
+}
+
+p {
+  color: #a3a5ae;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards p {
+  font-size: 85%;
+}
+
+.cards .role {
+  color: #4c4e61;
+  font-weight: 700;
+  font-size: 100%;
+}
+
+.cards .col {
+  width: 30%;
+}
+
+.cards .card-1 {
+  border-top: 2px solid #45d3d3;
+}
+
+.cards .card-2 {
+  border-top: 2px solid #ea5353;
+  margin-bottom: 1rem;
+}
+
+.cards .card-3 {
+  border-top: 2px solid #fcaf4a;
+}
+
+.cards .card-4 {
+  border-top: 2px solid #549ef2;
+}
+
+.cards .card {
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 1rem 1rem 1rem;
+  -webkit-box-shadow: -1px 3px 5px #a3a5ae, 1px 3px 5px #a3a5ae;
+          box-shadow: -1px 3px 5px #a3a5ae, 1px 3px 5px #a3a5ae;
+  /*right and bottom*/
+}
+
+.cards .card img {
+  display: block;
+  margin-left: auto;
+  margin-top: 2rem;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.cards .card:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+  .cards {
+    width: 95%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  main {
+    height: 100%;
+  }
+  main .heading {
+    width: 50%;
+  }
+  main h1 {
+    font-size: 150%;
+  }
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 50%;
+  }
+  .cards .col {
+    width: 100%;
+  }
+  .cards .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    height: 100%;
+  }
+  main .heading {
+    width: 75%;
+  }
+  main h1 {
+    font-size: 150%;
+  }
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 75%;
+  }
+  .cards .col {
+    width: 100%;
+  }
+  .cards .card {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
